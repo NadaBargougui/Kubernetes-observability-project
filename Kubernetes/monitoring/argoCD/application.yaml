@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/NadaBargougui/Kubernetes-observability-project/Kubernetes/sockshop/kustomize
+    repoURL: https://github.com/NadaBargougui/Kubernetes-observability-project/tree/main/Kubernetes/sockshop/kustomize
     targetRevision: HEAD
     path: Kubernetes/sockshop/kustomize
   destination:
