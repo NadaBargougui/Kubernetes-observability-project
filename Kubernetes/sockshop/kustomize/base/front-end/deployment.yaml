@@ -34,4 +34,4 @@ spec:
                 - all
             readOnlyRootFilesystem: true
       nodeSelector:
-        beta.kubernetes.io/os: linux
+        kubernetes.io/os: linux

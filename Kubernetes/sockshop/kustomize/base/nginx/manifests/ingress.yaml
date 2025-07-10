@@ -2,19 +2,18 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: sockshop-ingress
-  namespace: ingress-nginx
+  namespace: sock-shop
   annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true" # if your Ingress paths include (/|$)(.*)
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
     - http:
         paths:
-          - path: /front-end(/|$)(.*)
+          - path: /
             pathType: Prefix
             backend:
               service:
-                name: front-end.sockshop.svc.cluster.local
-                namespace: sockshop
+                name: front-end
                 port:
                   number: 80
