@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/NadaBargougui/Kubernetes-observability-project/tree/main/Kubernetes/sockshop/kustomize
+    repoURL: https://github.com/NadaBargougui/Kubernetes-observability-project
     targetRevision: HEAD
-    path: Kubernetes/sockshop/kustomize
+    path: Kubernetes/sockshop/kustomize/kustomize-argoCD
   destination:
     server: https://kubernetes.default.svc
     namespace: sock-shop
