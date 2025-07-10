@@ -8,7 +8,13 @@ spec:
   source:
     repoURL: https://github.com/NadaBargougui/Kubernetes-observability-project
     targetRevision: HEAD
-    path: kubernetes
+    path: Kubernetes/sockshop/kustomize/manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: sock-shop
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+    automated:
+      selfHeal: true
+      prune: true

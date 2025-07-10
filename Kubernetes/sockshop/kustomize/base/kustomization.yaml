@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: sock-shop
+
+resources:
+  - carts
+  - carts-db
+  - catalogue
+  - catalogue-db
+  - front-end
+  - nginx
+  - orders
+  - orders-db
+  - payment
+  - queue-master
+  - rabbitmq
+  - session-db
+  - shipping
+  - user
+  - user-db
