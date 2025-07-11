@@ -252,9 +252,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: front-end
+  name: front-end-service
   labels:
-    name: front-end
+    name: front-end-service
   namespace: sock-shop
 spec:
   ports:
