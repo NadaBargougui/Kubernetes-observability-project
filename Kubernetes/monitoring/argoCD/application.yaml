@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/NadaBargougui/Kubernetes-observability-project
     targetRevision: HEAD
-    path: Kubernetes/sockshop/kustomize/base
+    path: Kubernetes/sockshop/kustomize/base/manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: sock-shop
